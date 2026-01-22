@@ -65,6 +65,6 @@ async def send_email(email: schemas.EmailSchema, background_tasks: BackgroundTas
     
     return {"status": "success", "message": "Email sending queued and logged"}
 
-@app.get("/logs")
+@app.get("/admin/logs")
 async def get_logs(db: Session = Depends(get_db)):
     return db.query(models.EmailLog).all()

@@ -13,6 +13,9 @@ pip-delete-this-directory.txt
 # Environment variables
 .env
 
+# Secrets
+k8s/secrets.yaml
+
 # Database
 *.db
 *.sqlite3
